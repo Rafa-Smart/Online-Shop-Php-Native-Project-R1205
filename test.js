@@ -22,3 +22,5 @@ class WebsiteTokoOnline extends Website {
     "Platform toko online sederhana untuk belanja cepat & praktis.";
   static dateCreated = "September 2025";
 }
+
+// test
