@@ -53,6 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["id"])) {
     echo '      <tr><th>Amount</th><td>' . $product["amountProduct"] . '</td></tr>';
     echo '      <tr><th>Stock Now</th><td>' . $product["stockNow"] . '</td></tr>';
     echo '      <tr><th>Price</th><td>Rp ' . number_format($product["priceProduct"], 0, ',', '.') . '</td></tr>';
+    echo '      <tr><th>Notes</th><td>' . $product["notesProduct"] . '</td></tr>';
     echo '      <tr><th>Total Price</th><td>Rp ' . number_format($product["totalPrice"], 0, ',', '.') . '</td></tr>';
     echo '      <tr><th>Created At</th><td>' . htmlspecialchars($product["created_at"]) . '</td></tr>';
     echo '      <tr><th>Updated At</th><td>' . ($product["update_at"] ? $product["update_at"] : "belum diupdate") . '</td></tr>';
@@ -76,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["id"])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wihslist Page</title>
-  <link rel="stylesheet" href="../styles/wishlist.css?v=9">
+  <link rel="stylesheet" href="../styles/wishlist.css?v=2">
   <link rel="stylesheet" href="../styles/navbar.css?v=7">
 
 </head>
@@ -281,7 +282,7 @@ function tampilProducts()
               <input type='hidden' name='created_at' value='$created_at'>
               <input type='hidden' name='idProduct' value='$product_id'>
               <button type='submit' id='button-order-delete' name='wishlist-delete' 
-                      style='background-color:#f44336; color:#fff; border:none; padding:6px 23px; border-radius:4px; cursor:pointer;'>
+                      style='background-color:#f44336; color:#fff; border:none; padding:6px 18px; border-radius:4px; cursor:pointer;'>
                       Delete
               </button>
           </form>";

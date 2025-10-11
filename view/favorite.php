@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["id"])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>favorite Page</title>
-  <link rel="stylesheet" href="../styles/favorite.css?v=90">
+  <link rel="stylesheet" href="../styles/favorite.css?v=7">
   <link rel="stylesheet" href="../styles/navbar.css?v=9">
 
 </head>
@@ -265,7 +265,7 @@ function tampilProducts()
               <input type='hidden' name='created_at' value='$created_at'>
               <input type='hidden' name='idProduct' value='$product_id'>
               <button type='submit' id='button-order-delete' name='favorite-delete'
-                      style='background-color:#f44336; color:#fff; border:none; padding:6px 23px; border-radius:4px; cursor:pointer;'>
+                      style='background-color:#f44336; color:#fff; border:none; padding:6px 18px; border-radius:4px; cursor:pointer;'>
                       Delete
               </button>
           </form>";

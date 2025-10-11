@@ -1,0 +1,46 @@
+feature application :
+1. login 
+   - admin
+   - penjual
+   - pembeli
+2. register
+   - penjual
+   - pembeli
+3. Navbar
+   - Logo
+   - Search
+   - Icon Keranjang
+   - Profile
+   - mode
+4. beranda
+   - produk unggulan
+   - tampilin seluruh produk
+   - search
+   - filter
+5. Profile Pembeli
+   - info akun 
+   - barang yang mau dibeli
+   - favorite (opsional)
+   - ulasan
+6. profile Penjual
+   - notifikasi yg beli
+   - crud barang
+   - liast barang yg dipesan
+   - export excel (opsional)
+7. Profile Admin
+   - crud daftar akun tersedia
+   - verifikasi
+   
+   
+
+8. database
+   - akun penjual 
+   - akun pembeli
+   - barang jual 
+   - admin
+   - orders
+
+
+9. perintilan
+   - font = poppins
+   - warna = biru, putih, abu-abu
